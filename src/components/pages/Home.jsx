@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; // ✅ Add this at the top with other imports
+
 import {
   Phone,
   Mail,
@@ -87,11 +89,11 @@ export default function Home() {
               <div className="hero-content" data-aos={s.animation}>
                 <h1>{s.title}</h1>
                 <p>{s.subtitle}</p>
-                <div className="slide-buttons">
-                  <button className="btn-primary">Explore More</button>
-                  
-                  <button className="btn-outline">Contact Us</button>
-                </div>
+              <div className="slide-buttons">
+  <Link to="/portfolio" className="btn-primary">Explore More</Link>
+  <Link to="/contact" className="btn-outline">Contact Us</Link>
+</div>
+
               </div>
             )}
           </div>
