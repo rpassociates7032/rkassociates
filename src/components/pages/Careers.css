@@ -2,7 +2,7 @@
 .heroo {
   position: relative;
   height: 80vh;
-  background: url("./carriers.jpg") center/cover no-repeat;
+  background: url("/carriers.jpg") center/cover no-repeat;
   
   display: flex;
   align-items: center;

@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src="public/logo3.png" alt="Logo" />
+        <img src="/logo3.png" alt="Logo" />
         <div className="brand-text">
           <h1>RP Associates</h1>
           <p>Architecture | Interiors | Project Management</p>

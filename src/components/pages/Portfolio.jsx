@@ -25,7 +25,7 @@ export default function Portfolio() {
       category: "Residential Architecture",
       images: [
         "./rkhome2.jpg",
-        "https://t4.ftcdn.net/jpg/02/31/69/05/360_F_231690594_1xpuGVGkzsPIvIVRyRkGLY5Ze11d3yev.jpg",
+        "./rkhome2.jpg",
       ],
     },
     {
@@ -35,7 +35,7 @@ export default function Portfolio() {
       category: "Commercial Architecture",
       images: [
         "./corporate.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh97Zpln1d4FD3Z74VIffvXe6Hnf_S2xw4vg&s",
+        "./corporate.jpg",
       ],
     },
     {
@@ -45,7 +45,7 @@ export default function Portfolio() {
       category: "Industrial Architecture",
       images: [
         "./industrial.jpg",
-        "https://via.placeholder.com/800x500?text=Industrial+2",
+        "./industrial.jpg",
       ],
     },
     {
@@ -55,7 +55,7 @@ export default function Portfolio() {
       category: "Institutional Architecture",
       images: [
         "./hospitl.jpg",
-        "https://via.placeholder.com/800x500?text=Hospital+Interior",
+        "./hospitl.jpg",
       ],
     },
     {
@@ -65,7 +65,7 @@ export default function Portfolio() {
       category: "Public / Community Architecture",
       images: [
         "./library.jpg",
-        "https://via.placeholder.com/800x500?text=Cultural+Center+2",
+        "./library.jpg",
       ],
     },
     {
@@ -75,7 +75,7 @@ export default function Portfolio() {
       category: "Urban Design & Master Planning",
       images: [
         "./smartt.jpg",
-        "https://via.placeholder.com/800x500?text=Smart+City+Plan+2",
+        "./smartt.jpg",
       ],
     },
     {
@@ -85,7 +85,7 @@ export default function Portfolio() {
       category: "Interior Design & Space Planning",
       images: [
         "./modern.jpg",
-        "https://via.placeholder.com/800x500?text=Interior+Design+2",
+        "./modern.jpg",
       ],
     },
     {
@@ -95,7 +95,7 @@ export default function Portfolio() {
       category: "Landscape Architecture",
       images: [
         "./urban.jpg",
-        "https://via.placeholder.com/800x500?text=Landscape+2",
+        "./urban.jpg",
       ],
     },
     {
@@ -105,7 +105,7 @@ export default function Portfolio() {
       category: "Specialized Streams",
       images: [
         "./special.jpg",
-        "https://via.placeholder.com/800x500?text=Green+Architecture+2",
+        "./special.jpg",
       ],
     },
     {
@@ -115,7 +115,7 @@ export default function Portfolio() {
       category: "Specialized Streams",
       images: [
         "./heritage.jpg",
-        "https://via.placeholder.com/800x500?text=Heritage+2",
+        "./heritage.jpg",
       ],
     },
     {
@@ -125,7 +125,7 @@ export default function Portfolio() {
       category: "Specialized Streams",
       images: [
         "./parametric.jpg",
-        "https://via.placeholder.com/800x500?text=Parametric+Design+2",
+        "./parametric.jpg",
       ],
     },
     {

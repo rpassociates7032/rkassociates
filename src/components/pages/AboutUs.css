@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: center;
 margin: 0rem;
-  background: url("heroabout.jpg") center/cover no-repeat;
+  background: url("/heroabout.jpg") center/cover no-repeat;
 }
 
 .hero1-overlay {
