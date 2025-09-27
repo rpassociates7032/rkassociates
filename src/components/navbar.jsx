@@ -5,6 +5,11 @@ import "./Navbar.css";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Optional: close menu when clicking a link
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -15,7 +20,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+      <ul className={`nav-links ${menuOpen ? "open" : ""}`} onClick={handleLinkClick}>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/services">Services</Link></li>

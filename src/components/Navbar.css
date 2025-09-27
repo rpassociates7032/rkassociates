@@ -211,15 +211,16 @@ body {
     color: #000;
   }
   .logo img {
-        width: 60px;
+               width: 65px;
         margin-left: -10px;
+        height: 80px;
   }
   .brand-text h1 {
     font-size: 1.7rem;
         margin-left: 10px;
   }
     .brand-text p {
-    font-size: 0.96rem;
+    font-size: 13px;
     margin-left: 10px;
   }
 }
