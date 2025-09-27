@@ -95,9 +95,14 @@ margin: 0rem;
 @media (max-width: 768px) {
   .about {
     flex-direction: column;
-    text-align: center;
+    
   }
-
+@media (max-width: 768px) {
+    .about-text p {
+        font-size: 16px;
+        text-align: left;
+    }
+}
   .founder-section {
     order: -1;
   }
@@ -224,7 +229,7 @@ margin: 0rem;
   }
   .about-text p {
    
-    font-size: 18px;
+    font-size: 16px;
             text-align: left;
 }
 }

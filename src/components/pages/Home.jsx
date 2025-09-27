@@ -23,7 +23,7 @@ export default function Home() {
 
   const slides = [
     {
-      image: "rkhome1.jpg",
+      image: "/rkhome1.jpg",
       title: "Welcome to RP Associates",
       subtitle:
         "Designing Dreams, Building Futures with creativity, precision, and trust.",
@@ -89,6 +89,7 @@ export default function Home() {
                 <p>{s.subtitle}</p>
                 <div className="slide-buttons">
                   <button className="btn-primary">Explore More</button>
+                  
                   <button className="btn-outline">Contact Us</button>
                 </div>
               </div>
