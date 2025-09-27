@@ -44,16 +44,27 @@ export default function Contact() {
             </p>
           </div>
 
-          {/* Address Box */}
+          {/* Address Box - Bhimavaram Branch */}
           <div className="info-box" data-aos="zoom-in" data-aos-delay="200">
             <MapPin size={36} />
-            <h3>Visit Us</h3>
+            <h3>Bhimavaram Branch</h3>
             <p>
               G-13, Visisht Heights, Komarada Road
               <br />
               Near Aditya Junior College, Rayalam
               <br />
-              Bhimavaram, Andhra Pradesh-534208
+              Bhimavaram, Andhra Pradesh - 534208
+            </p>
+          </div>
+
+          {/* Address Box - Vijayawada Branch */}
+          <div className="info-box" data-aos="zoom-in" data-aos-delay="300">
+            <MapPin size={36} />
+            <h3>Vijayawada Branch</h3>
+            <p>
+              Near Swimming Pool, Gandhi Nagar
+              <br />
+              Vijayawada, Andhra Pradesh - 520003
             </p>
           </div>
         </div>
@@ -63,10 +74,7 @@ export default function Contact() {
       <div className="contact-container">
         {/* Left: Image */}
         <div className="contact-image-side" data-aos="fade-right">
-          <img
-            src="/con2.jpg"
-            alt="Office"
-          />
+          <img src="/con2.jpg" alt="Office" />
         </div>
 
         {/* Right: Form */}
@@ -74,7 +82,6 @@ export default function Contact() {
           <div className="form-card">
             <h2>Connect With Our Team</h2>
             <form action="https://api.web3forms.com/submit" method="POST">
-              {/* Hidden Web3Forms Access Key */}
               <input
                 type="hidden"
                 name="access_key"
