@@ -55,7 +55,7 @@ export default function AboutUs() {
 
         <div className="founder-section">
           <img
-            src="./founder.jpeg"
+            src="founder.jpeg"
             alt="Founder Pilla Devi Rakesh"
           />
           <h3>Pilla Devi Rakesh</h3>

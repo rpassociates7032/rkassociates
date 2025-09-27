@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";  // import Link from react-router-dom
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -7,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src="public/logo3.png" alt="Logo" /> 
+        <img src="public/logo3.png" alt="Logo" />
         <div className="brand-text">
           <h1>RP Associates</h1>
           <p>Architecture | Interiors | Project Management</p>
@@ -15,13 +16,13 @@ export default function Navbar() {
       </div>
 
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/carriers">Carriers</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/why">Why RP Associates</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/carriers">Carriers</Link></li>
+        <li><Link to="/portfolio">Portfolio</Link></li>
+        <li><Link to="/why">Why RP Associates</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
       </ul>
 
       <div

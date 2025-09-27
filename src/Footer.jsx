@@ -52,7 +52,7 @@ export default function Footer() {
         <div className="footer-about">
           {/* Logo above title */}
           <img
-            src="/logo3.png"   // ✅ Use this (place logo2.png in public/)
+            src="logo3.png"   // ✅ Use this (place logo2.png in public/)
             alt="RP Associates Logo"
             className="footer-logo"
           />

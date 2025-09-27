@@ -23,28 +23,28 @@ export default function Home() {
 
   const slides = [
     {
-      image: "./rkhome1.jpg",
+      image: "rkhome1.jpg",
       title: "Welcome to RP Associates",
       subtitle:
         "Designing Dreams, Building Futures with creativity, precision, and trust.",
       animation: "fade-up",
     },
     {
-      image: "./rkhome2.jpg",
+      image: "rkhome2.jpg",
       title: "Architecture that Inspires",
       subtitle:
         "We shape the skyline with innovative, sustainable, and timeless architectural solutions.",
       animation: "fade-up",
     },
     {
-      image: "./rkhome3.jpg",
+      image: "rkhome3.jpg",
       title: "Elegant Interiors, Thoughtfully Designed",
       subtitle:
         "Transform your spaces with interiors that reflect your personality and lifestyle.",
       animation: "fade-down",
     },
     {
-      image: "./rkhome4.jpg",
+      image: "rkhome4.jpg",
       title: "Renovation & Remodeling Experts",
       subtitle:
         "Reimagine your home with modern upgrades and seamless functionality.",
@@ -62,15 +62,15 @@ export default function Home() {
   }, []);
 
   const projects = [
-    { img: "./corporate.jpg", title: "Corporate Tower Complex" },
-    { img: "./rkhome2.jpg", title: "Modern House" },
-    { img: "./special.jpg", title: "Green & Sustainable Architecture" },
-    { img: "./greenbuilding.jpg", title: "Green Building Architecture" },
-    { img: "./modern.jpg", title: "Modern Office Interiors" },
-    { img: "./renovation and.jpg", title: "Renovation & Remodeling" },
-    { img: "./mod3.jpg", title: "Urban Mixed-Use Project" },
-    { img: "./cafes.jpg", title: "Restaurant & Cafes" },
-    { img: "./rkhome3.jpg", title: "Interior Design" },
+    { img: "corporate.jpg", title: "Corporate Tower Complex" },
+    { img: "rkhome2.jpg", title: "Modern House" },
+    { img: "special.jpg", title: "Green & Sustainable Architecture" },
+    { img: "greenbuilding.jpg", title: "Green Building Architecture" },
+    { img: "modern.jpg", title: "Modern Office Interiors" },
+    { img: "renovation and.jpg", title: "Renovation & Remodeling" },
+    { img: "mod3.jpg", title: "Urban Mixed-Use Project" },
+    { img: "cafes.jpg", title: "Restaurant & Cafes" },
+    { img: "rkhome3.jpg", title: "Interior Design" },
   ];
 
   return (
@@ -140,7 +140,7 @@ At RP Associates, we don’t just design buildings — we create environments th
         </div>
 
         <div className="founder-image" data-aos="fade-right">
-          <img src="./about1.jpg" alt="Founder Pilla Devi Rakesh" className="about-img" />
+          <img src="about1.jpg" alt="Founder Pilla Devi Rakesh" className="about-img" />
         </div>
       </section>
 
@@ -221,7 +221,7 @@ At RP Associates, we don’t just design buildings — we create environments th
       {/* CONTACT FORM */}
       <div className="contact-container">
         <div className="contact-image-side" data-aos="fade-right">
-          <img src="/con2.jpg" alt="Office" />
+          <img src="con2.jpg" alt="Office" />
         </div>
 
         <div className="contact-form-side" data-aos="fade-right">
