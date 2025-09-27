@@ -22,7 +22,7 @@ body {
 /* Hero Section */
 .contact-hero {
   position: relative;
-  background: url("./con hero.jpg") no-repeat center center/cover;
+  background: url("/con hero.jpg") no-repeat center center/cover;
 
   display: flex;
   justify-content: center;
