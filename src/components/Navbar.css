@@ -1,0 +1,225 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Poppins", Arial, sans-serif; /* modern professional font */
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.95); /* brand blue transparent */
+  backdrop-filter: blur(10px); /* frosted glass effect */
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  gap: 2rem;
+ 
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+/* Logo + Brand */
+/* Logo + Brand side by side */
+.logo {
+  display: flex;
+  align-items: left;
+  /* space between logo and text */
+}
+
+.logo img {
+ width: 60px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.brand-text {
+  margin-top: 20px;
+  margin-left: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column; /* stack title & subtitle */
+  font-family: Arial, sans-serif; /* Arial font */
+  line-height: 1.3;
+}
+
+.brand-text h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 10px;
+  
+}
+
+.brand-text p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #dcdcdc;
+  margin-top: 0.2rem;
+  margin-left: 10px;
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+      font-family: Arial, sans-serif;
+
+  font-weight: 300;
+  transition: all 0.3s ease;
+  padding: 8px 0;
+  display: inline-block;
+}
+
+.nav-links li a:hover {
+  color: #3f8013;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #3f8013;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger menu */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 1100;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Animate hamburger into X */
+.menu-icon.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-icon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.menu-icon.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%; /* sits directly below navbar */
+    left: 0;
+    background: rgba(0, 0, 0, 0.98);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+
+    /* Hidden by default */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    border-top: 2px solid #ffffff; /* top border */
+    transition: all 0.4s ease-in-out;
+  }
+
+  .nav-links.open {
+    max-height: 100vh; /* expand to fit */
+    opacity: 1;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #3f8013; /* bottom border */
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* divider line */
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none; /* remove last border */
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 0.9rem 0;
+    font-size: 1.1rem;
+    color: #ffffff;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  /* Touch hover / tap animation */
+  .nav-links li a:active {
+    background: rgba(63, 128, 19, 0.15); /* light green touch effect */
+    transform: scale(0.97); /* small press effect */
+  }
+
+  /* Menu Icon (hamburger) */
+  .menu-icon {
+    display: flex;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .menu-icon:active {
+    transform: scale(0.85) rotate(8deg);
+  }
+
+  /* Ensure logo + text align left nicely on mobile */
+  .navbar {
+    padding: 1rem 1.5rem;
+    position: relative; /* so dropdown anchors under it */
+    z-index: 1000;
+    color: #000;
+  }
+  .logo img {
+        width: 60px;
+        margin-left: -10px;
+  }
+  .brand-text h1 {
+    font-size: 1.7rem;
+        margin-left: 10px;
+  }
+    .brand-text p {
+    font-size: 0.96rem;
+    margin-left: 10px;
+  }
+}

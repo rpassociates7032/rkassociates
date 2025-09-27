@@ -1,0 +1,150 @@
+.footer {
+  background-color: #000000;
+  color: white;
+  padding: 3rem 1.5rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Stats Section */
+.footer-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.footer-stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4aa40d;
+}
+
+.footer-stat-label {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Main Section */
+.footer-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  border-top: 1px solid #555;
+  padding-top: 2rem;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  
+}
+
+.footer-text {
+  color: #bbb;
+  line-height: 1.6;
+}
+
+/* Links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #3f8013;
+}
+
+/* Contact */
+.footer-contact p {
+  margin: 0.3rem 0;
+  color: #bbb;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-socials a {
+  font-size: 1.5rem;
+  color: #bbb;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #3f8013;
+}
+
+/* Bottom Line */
+.footer-bottom {
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  border-top: 1px solid #555;
+  padding-top: 1rem;
+}
+.footer-logo {
+  width: 70px;      /* adjust size */
+  height: auto;
+  margin-bottom: 0px;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .footer-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+
+  .footer-main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer-tagline {
+  font-size: 16px;
+ 
+  letter-spacing: 0.5px;
+}
+
+a {
+    font-weight: 500;
+    color: #3f8013;
+    text-decoration: inherit;
+}
+
+
+@media (max-width: 768px) {
+.footer-tagline {
+  font-size: 18px;
+ 
+  letter-spacing: 0.5px;
+}
+.footer-text {
+    
+    font-size: 18px;
+}
+.footer-links ul li {
+  font-size: 18px;
+}
+.footer-contact p {
+   
+    font-size: 18px;
+}
+
+
+}

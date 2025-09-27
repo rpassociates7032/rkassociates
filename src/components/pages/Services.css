@@ -1,0 +1,185 @@
+.services-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.services-hero {
+  position: relative;
+   background: url("./services.jpg") center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0rem;
+}
+
+.services-hero .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 60px;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.services-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.services-hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hero-buttons .btn {
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.contact-btn {
+  background-color: #000000;
+}
+.contact-btn:hover {
+  background-color: #28a745;
+}
+
+.call-btn {
+  background-color: #28a745;
+}
+.call-btn:hover {
+  background-color: #218838;
+}
+
+/* Featured Services Section */
+.featured-services {
+  width: 100%;
+  padding: 80px 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.service-row {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.service-row.row-right {
+  flex-direction: row-reverse;
+}
+
+.service-image {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+
+.service-image .image-overlay {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.service-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-image:hover img {
+  transform: scale(1.1);
+}
+
+.service-content {
+  flex: 1;
+}
+
+.service-content h2 {
+  font-size: 2rem;
+  color: #3f8013;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.service-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.service-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.service-buttons .btn {
+  padding: 12px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Fix */
+@media (max-width: 992px) {
+  .service-row {
+    flex-direction: column !important; /* ✅ force stack */
+   
+  }
+
+  .service-image img {
+    height: 300px;
+  }
+
+  .service-content {
+    margin-top: 20px;
+  }
+
+  .service-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-hero h1 {
+    font-size: 2.2rem;
+  }
+  .services-hero p {
+    font-size: 1rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

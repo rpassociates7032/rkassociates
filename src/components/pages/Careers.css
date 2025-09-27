@@ -1,0 +1,241 @@
+/* Hero Banner */
+.heroo {
+  position: relative;
+  height: 80vh;
+  background: url("./carriers.jpg") center/cover no-repeat;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.heroo h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 6px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+.heroo p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 6px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Job Container */
+.jobs-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.job-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.job-card h3 {
+    color: #3f8013;
+    margin-bottom: 5px;
+    font-size: 18px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.meta {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+.job-card p {
+  margin-bottom: 10px;
+   
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.job-details {
+  margin-top: 15px;
+}
+.job-details ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+.job-details li {
+  margin-bottom: 6px;
+}
+
+/* Buttons */
+.btn {
+  background: #000000;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #0055aa;
+}
+.btn.apply {
+  background: #3f8013;
+}
+.btn.apply:hover {
+  background: #3f8013;
+}
+.btn.hide {
+  background: #777;
+  margin-left: 10px;
+}
+.btn.hide:hover {
+  background: #555;
+}
+.btn.submit {
+  width: 100%;
+  margin-top: 10px;
+  background: #003366;
+}
+
+/* Modal (Popup Overlay) */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  width: 400px;
+  position: relative;
+}
+.modal-content.center {
+  text-align: center;
+}
+.modal-content h2 {
+  margin-bottom: 15px;
+}
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-content input {
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+.close:hover {
+  color: #000;
+}
+/* Careers Intro (no box, just text) */
+/* Careers Intro */
+.careers-intro {
+  max-width: 850px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.intro-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Inter", sans-serif;
+  color: #0f172a; /* dark navy */
+}
+
+.intro-text {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  font-family: "Inter", ui-sans-serif;
+  color: #374151; /* slate */
+  text-align: justify; /* smooth paragraph look */
+}
+
+.intro-text.highlight {
+  font-weight: 500;
+  color: #3f8013; /* blue highlight */
+  text-align: center;
+  margin-top: 2rem;
+   font-family: "Inter", sans-serif;
+}
+
+/* Hiring Heading */
+.hiring-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 3rem 0 2rem 0;
+  font-family: Arial, sans-serif;
+  color: #3f8013; /* vivid blue */
+  text-decoration: underline;
+}
+
+
+
+/* Spinner inside button */
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.footer{
+  margin-top: 0px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+.intro-text {
+    font-size: 21px;
+  }
+  .job-card h3 {
+    color: #3f8013;
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-family: ui-rounded;
+}
+.intro-title {
+    font-size: 23px;}
+    .job-card p{
+      font-size: 20px;
+    }
+}
