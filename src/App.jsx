@@ -53,8 +53,6 @@ function AppContent() {
 
 export default function App() {
   return (
-    <Router>
-      <AppContent />
-    </Router>
+    <div style={{ backgroundColor: "black", height: "100vh" }}></div>
   );
 }
