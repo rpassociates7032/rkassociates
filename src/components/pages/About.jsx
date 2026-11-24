@@ -1,4 +1,5 @@
 import "./AboutUs.css";
+import TiltPhoto from "./TiltPhoto";
 import { FaUsers, FaCogs, FaShieldAlt, FaLightbulb, FaClock } from "react-icons/fa";
 export default function AboutUs() {
   return (
@@ -54,12 +55,60 @@ export default function AboutUs() {
         </div>
 
         <div className="founder-section">
-          <img
-            src="founder.jpeg"
-            alt="Founder Pilla Devi Rakesh"
-          />
+          <TiltPhoto src="founder.webp" alt="Founder Pilla Devi Rakesh" />
           <h3>Pilla Devi Rakesh</h3>
           <p>Founder & Visionary</p>
+        </div>
+      </section>
+
+      {/* Lead Interior Designer */}
+      <section className="about team-member container">
+        <div className="founder-section">
+          <TiltPhoto
+            src="mani-kaushik.jpg"
+            alt="O. Mani Kaushik, Lead Interior Designer"
+          />
+          <h3>O. Mani Kaushik</h3>
+          <p>Lead Interior Designer</p>
+        </div>
+
+        <div className="about-text">
+          <h2>Lead Interior Designer</h2>
+          <p>
+            With a passion for creating elegant, functional, and timeless
+            spaces, <span className="founder-name">O. Mani Kaushik</span> brings
+            creativity, attention to detail, and a refined design vision to
+            every project.
+          </p>
+          <p>
+            Specializing in <strong>residential and commercial interiors</strong>,
+            the approach combines contemporary aesthetics, thoughtful space
+            planning, material selection, lighting design, and functionality to
+            create interiors that reflect each client’s lifestyle, personality,
+            and aspirations.
+          </p>
+          <p>
+            From conceptual design to final execution, every detail is carefully
+            considered to ensure a seamless balance between beauty, comfort, and
+            practicality.
+          </p>
+          <p>
+            <strong>Design Philosophy:</strong> Creating meaningful spaces that
+            inspire, elevate everyday living, and stand the test of time.
+          </p>
+          <div className="expertise">
+            <strong>Expertise:</strong>
+            <ul className="expertise-tags">
+              <li>Residential Interiors</li>
+              <li>Commercial Interiors</li>
+              <li>Space Planning</li>
+              <li>Modular Design</li>
+              <li>Material &amp; Finish Selection</li>
+              <li>Lighting Design</li>
+              <li>Furniture &amp; Styling</li>
+              <li>3D Visualization</li>
+            </ul>
+          </div>
         </div>
       </section>
 

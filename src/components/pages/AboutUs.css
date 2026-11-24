@@ -75,14 +75,77 @@ margin: 0rem;
   text-align: center;
 }
 
-.founder-section img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
+/* ---- 3D tilt photo ---- */
+.tilt-scene {
+  perspective: 1000px;
+  display: inline-block;
+  margin-bottom: 25px;
+  animation:
+    photo-enter 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both,
+    photo-float 6s ease-in-out 1s infinite;
+}
+
+.tilt-scene:hover {
+  animation-play-state: paused;
+}
+
+.tilt-card {
+  --rx: 0deg;
+  --ry: 0deg;
+  position: relative;
+  width: 260px;
+  height: 340px;
+  max-width: 80vw;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--rx)) rotateY(var(--ry));
+  transition: transform 0.25s ease-out;
+}
+
+.tilt-card img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border: 6px solid #000000;
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
-  margin-bottom: 15px;
+  object-position: center top;
+  border-radius: 14px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+  transform: translateZ(30px);
+}
+
+/* green block floating behind the photo for depth */
+.tilt-accent {
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #3f8013, #a6d17f);
+  transform: translate3d(18px, 18px, -30px);
+  opacity: 0.85;
+}
+
+@keyframes photo-enter {
+  from {
+    opacity: 0;
+    transform: perspective(1000px) rotateY(-35deg) translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes photo-float {
+  0%, 100% { transform: perspective(1000px) rotateY(0deg) translateY(0); }
+  50% { transform: perspective(1000px) rotateX(3deg) rotateY(-8deg) translateY(-10px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tilt-scene {
+    animation: none;
+  }
+  .tilt-card {
+    transition: none;
+  }
 }
 
 .founder-section h3 {
@@ -232,4 +295,30 @@ margin: 0rem;
     font-size: 16px;
             text-align: left;
 }
+}
+
+
+/* ========================
+   TEAM MEMBER (Lead Interior Designer)
+======================== */
+.expertise {
+  margin-top: 10px;
+}
+
+.expertise-tags {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.expertise-tags li {
+  background: #f1f7ec;
+  color: #2d5c0c;
+  border: 1px solid #cfe3c0;
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 0.9rem;
 }

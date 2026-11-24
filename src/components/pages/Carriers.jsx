@@ -69,7 +69,7 @@ export default function Careers() {
 
     const formData = new FormData(e.target);
     formData.append("key", "014baf2a-98e2-4e50-b2d3-f5204945ff99"); 
-    formData.append("recipient", "careers@rkassociates.com");
+    formData.append("recipient", "rpassociates97@gmail.com");
 
     try {
       const response = await fetch("https://api.w3forms.com/v1/form/submit", {
@@ -112,10 +112,10 @@ export default function Careers() {
 {/* Careers Intro Text */}
 <section className="careers-intro">
   <h2 className="intro-title" data-aos="fade-up">
-    Careers at RK Associates
+    Careers at RP Associates
   </h2>
   <p className="intro-text" data-aos="fade-up" data-aos-delay="200">
-    At RK Associates, we are growing and looking for passionate professionals 
+    At RP Associates, we are growing and looking for passionate professionals 
     to join our team in Vijayawada. We invite candidates with relevant 
     qualifications, skills, education, experience, or certifications in the 
     fields of architecture, civil/structural engineering, and design.
@@ -174,7 +174,7 @@ export default function Careers() {
         ))}
       </div>
   <p className="intro-text highlight" data-aos="fade-up" data-aos-delay="600">
-    📩 Send your resume to: <a href="mailto:Rpassciates97@gmail.com"><b>Rpassciates97@gmail.com</b></a>
+    📩 Send your resume to: <a href="mailto:rpassociates97@gmail.com"><b>rpassociates97@gmail.com</b></a>
 
 
 
